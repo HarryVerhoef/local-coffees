@@ -1,0 +1,57 @@
+html {
+    font-family: "Muli", sans-serif;
+}
+h1 {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 0; padding: 0;
+    text-align: center;
+    line-height: 60px;
+}
+#map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+#controls {
+    position: relative;
+    height: 110px;
+    width: 100%;
+}
+#all-coffees, #near-me-buttons {
+    position: relative;
+    width: 30%;
+    height: 70px;
+    margin-top: 40px; margin-bottom: 0;
+    margin-left: 10%; margin-right: 10%;
+    float: left;
+}
+#coffees-near-me {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
+#controls button {
+    outline: none;
+    background-color: #29d;
+    color: #fff;
+    border-radius: 15px;
+    border-bottom: solid 7px #07b !important;
+    border: solid 1px #29d;
+    cursor: pointer;
+}
+input[type="text"], #radius {
+    width: 30%;
+    margin: 1.6666666666%;
+    height: 25px;
+    box-sizing: border-box;
+    float: left;
+}
+#coffeeLabels {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    list-style: none;
+}

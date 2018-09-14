@@ -1,0 +1,29 @@
+@()
+
+@main("local coffees") {
+    <h1>local coffees</h1>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <div id="controls">
+        <button id="all-coffees">All Coffees</button>
+        <form id="near-me-buttons" action="/near" method="GET">
+            <button type="Submit" id="coffees-near-me">Coffees Near Me</button>
+            <div id="nearControls">
+                <input type="text" placeholder="Lat" name="latitude" id="latitude">
+                <input type="text" placeholder="Long" name="longitude" id="longitude">
+                <select name="radius" id="radius">
+                    <option value="100">100 yards</option>
+                    <option value="200">200 yards</option>
+                    <option value="500">500 yards</option>
+                    <option value="1000">1000 yards</option>
+                    <option value="2000">2000 yards</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <script src="assets/javascripts/main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf21A5-5ohEXmXmPpiMDxKjE75DxTcA-A&callback=initMap">
+    </script>
+
+}

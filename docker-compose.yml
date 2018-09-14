@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+    mongodb:
+        image: tutum/mongodb
+        environment:
+          - AUTH=no
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+        volumes:
+          - ./mongodb:/mongo/db
+        ports:
+            - 27017:27017
