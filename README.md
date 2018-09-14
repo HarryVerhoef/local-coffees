@@ -17,7 +17,12 @@
 - Add data to places mongo see `places.json` form data.
 - Start sbt
 ```
-sbt run
+> sbt run
 ```
 - Open browser and head to localhost:9000
+
+- In Mongo Editor execute query:
+```
+db.place.createIndex({location: "2dsphere"})
+```
 
